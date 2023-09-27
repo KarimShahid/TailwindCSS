@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <title>Square Bracket</title>
+  </head>
+  <body>
+    <div class="flex bg-purple-400">
+      <div class="m-auto bg-red-900 text-white my-[10rem] w-[30vw]">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam,
+        perferendis. At voluptates quae quaerat eius ad nisi ea vero, porro
+        repellendus dolorem autem!
+      </div>
+    </div>
+    <form>
+      <label for="category" class="form-label">Category Name</label>
+      <input
+        type="text"
+        id="category"
+        class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+      />
+      onch
+      <!-- <input type="text" id="inputText" /> -->
+    </form>
+    <h1 id="hi"></h1>
+    <script>
+      const h = document.getElementById("hi");
+      let cat = document.getElementById("category");
+      cat.onkeyup = () => {
+        cat.value = cat.value.toLowerCase();
+      };
+    </script>
+  </body>
+</html>

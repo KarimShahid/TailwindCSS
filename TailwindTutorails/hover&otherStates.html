@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Hover-States</title>
+    <style>
+      .wrapper:hover .one {
+        display: none;
+      }
+      .wrapper:hover .two {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="m-36">
+      <button
+        class="text-sm px-2 py-2 bg-purple-900 text-white rounded-md hover:bg-purple-700 sm:hover:bg-purple-700 lg:hover:bg-green-700 active:bg-purple-900 focus:outline-yellow-500"
+      >
+        Submit Now
+      </button>
+    </div>
+    <div class="mx-5 relative wrapper">
+      <div class="one bg-red-300">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit maiores
+        architecto, provident molestias quidem molestiae totam voluptate veniam
+        nulla alias labore porro fugit!
+      </div>
+      <div class="two bg-yellow-300">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
+        accusamus repellat, nemo expedita sed eos saepe tenetur excepturi
+        ratione, rerum fugiat pariatur fuga non? Explicabo quidem sunt deserunt
+        sit ducimus.
+      </div>
+    </div>
+  </body>
+</html>
